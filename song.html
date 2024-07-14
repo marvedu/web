@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+
+    <section id="video">
+        <audio class="plyr" style="--plyr-color-main: #c21a1a;" controls>
+            <source src="/path/to/audio.mp3" type="audio/mp3" />
+            <source src="/path/to/audio.ogg" type="audio/ogg" />
+        </audio>
+    </section>
+
+    <footer>
+        <p>EDU</p>
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+          const players = Array.from(document.querySelectorAll('.plyr')).map((p) => new Plyr(p,{
+            youtube: { noCookie: true },
+            i18n: {
+              quality: 'Calidad',
+              speed: 'Velocidad',
+              captions: 'Subtítulos',
+              disabled: 'Desactivar',
+              enabled: 'Activar',
+            },
+          }));
+        });
+    </script>
+
+</body>
+</html>

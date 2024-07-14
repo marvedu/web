@@ -1,0 +1,89 @@
+#inicio {
+    padding-top: 0%;
+    margin: 0 auto;
+    width: 50%;
+    z-index: 1;
+  }
+
+  @media (max-width: 1250px) {
+    #inicio {
+        margin: 0 auto;
+        width: 70%;
+    }    
+  }
+
+  @media (max-width: 1050px) {
+    #inicio {
+        margin: 0 auto;
+        width: 80%;
+    }    
+  }
+
+  @media (max-width: 800px) {
+    #inicio {
+        margin: 0 auto;
+        width: 90%;
+    }    
+  }
+
+  #inicio>h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+  }
+
+  #inicio>h1>img {
+    text-align: center;
+    width: 120px;
+  }
+
+  #inicio>div {
+    flex-wrap: nowrap;
+    margin: 0px 0px 0px 0px;
+  }
+
+  #inicio>div>img {
+    height: 100%;
+    width: 100%;
+  }
+
+  #inicio>h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    background-color: #164884;
+    padding: 6px 0px 6px 0px;
+    margin: 5px 0px 5px 0px;
+    border-radius: 10px 10px 0px 0px;
+    color: #ffffff;
+    display: none;
+  }
+
+  #inicio>section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 1px;
+  }
+
+  #inicio>section>div {
+    height: 150px;
+    background-color: #000000;
+    margin: 1px 1px 0px 0px;
+    display: none;
+  }
+
+  #inicio>p {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  #foo {
+    background-color: #164884;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    align-content: center;
+    font-size: 12px;
+    border-radius: 0px 0px 0px 0px;
+    height: 70px;
+    margin: 1px 0px 0px 0px;
+  }
